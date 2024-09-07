@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(61,10,152);
+    background: linear-gradient(90deg, rgba(61,10,152,1) 0%, rgba(118,81,218,1) 35%, rgba(184,180,255,1) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.custom-button {
+    background-color: #a75fbd; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #e4a8e4; /* Darker Green */
+}

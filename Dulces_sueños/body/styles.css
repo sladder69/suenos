@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(61,10,152);
+    background: linear-gradient(90deg, rgba(61,10,152,1) 0%, rgba(118,81,218,1) 35%, rgba(184,180,255,1) 100%);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header img {
+    width: 100px;
+}
+
+.navbar-expand-lg_bg-body-tertiary {
+    background-color: #a389c0;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.featured-products {
+    padding: 20px;
+}
+
+/* Estilo para dividir en 3 columnas los productos */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.product-item {
+    flex: 0 0 32%; /* Cada producto ocupará el 32% del ancho para crear 3 columnas */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Separación entre las filas de productos */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    height: 100%; /* Para que todas las tarjetas tengan la misma altura */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+/* Botón de añadir al carrito */
+.btn-primary {
+    background-color: #B8B4FF;
+    border-color: #B8B4FF;
+    width: 100%; /* Hacemos el botón ancho */
+}
+
+.btn-primary:hover {
+    background-color: #9a8ae1;
+    border-color: #9a8ae1;
+}
+
+/* Estilos para el carrito */
+#cart-btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+#cart-count {
+    background-color: #631a94;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+#cartModal .modal-header, 
+#cartModal .modal-footer {
+    background-color: #B8B4FF;
+}
+
+#cart-items {
+    padding: 0;
+}
+
+#cart-items li {
+    list-style: none;
+}
+
+/* Título estilizado */
+h1 {
+    font-style: italic;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 0 0 48%; /* En pantallas medianas, las tarjetas ocuparán 48% del ancho */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-item {
+        flex: 0 0 100%; /* En pantallas pequeñas, las tarjetas ocuparán el 100% del ancho */
+    }
+}
